@@ -3310,7 +3310,7 @@ hr {
 
 .pricing-card-area .single-card {
     background: #ffff;
-    padding: 70px 0px;
+    padding: 40px 0px;
     border: 2px solid #2a6cb7;
 }
 
@@ -3336,9 +3336,8 @@ hr {
 }
 
 .pricing-card-area .single-card .card-mid {
-    margin-bottom: 25px;
-    padding-bottom: 26px;
-    border-bottom: 1px solid #E7E6EB
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid #E7E6EB */
 }
 
 .pricing-card-area .single-card .card-mid h4 {
@@ -3355,12 +3354,12 @@ hr {
 .pricing-card-area .single-card .card-bottom ul li {
     color: #717081;
     font-weight: 300;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
     font-size: 16px
 }
 
 .pricing-card-area .single-card .card-bottom ul li:last-child {
-    margin-bottom: 46px
+    margin-bottom: 20px
 }
 
 .pricing-card-area .single-card .card-bottom .borders-btn {
@@ -4337,9 +4336,6 @@ hr {
     font-weight: 400
 }
 
-.footer-area .footer-tittle ul li {
-    margin-bottom: 15px
-}
 
 .footer-area .footer-tittle ul li a {
     color: #000;
