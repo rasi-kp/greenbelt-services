@@ -9,6 +9,7 @@
     max-height: 200px;
     width: auto;
 }
+
 .gradient-background,
 .main-header .main-menu ul ul.submenu {
     background-image: linear-gradient(to left, #0BC6FF, #0d80f3, #0BC6FF);
@@ -3679,7 +3680,7 @@ hr {
 
 .categories-area .single-cat .cat-icon img {
     margin-bottom: 26px;
-    display: block
+    /* display: block */
 }
 
 .categories-area .single-cat .cat-cap h5 {

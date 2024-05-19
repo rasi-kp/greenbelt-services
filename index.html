@@ -48,13 +48,13 @@
                     <div class=" container-fluid">
                         <div class="row align-items-center justify-content-between">
                             <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2 col-5">
+                            <div class="col-xl-3 col-lg-3 col-5">
                                 <div class="logo">
                                     <a href="index.html"><img class="w-100" src="assets/img/logo/green belt final.png"
                                             alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-xl-10 col-lg-10">
+                            <div class="col-xl-9 col-lg-9">
                                 <div class="menu-wrapper  d-flex align-items-center justify-content-end">
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
@@ -63,7 +63,7 @@
                                                 <li><a href="index.html">Home</a></li>
                                                 <li><a href="about.html">About</a></li>
                                                 <li><a href="#client">Clients</a></li>
-                                                <li><a href="blog.html">Services</a>
+                                                <li><a href="#ourservice">Services</a>
                                                     <ul class="submenu">
                                                         <li><a href="carwash.html">Car Wash</a></li>
                                                         <li><a href="valetparking.html">Valet Parking</a></li>
@@ -504,12 +504,19 @@
                 </div>
             </div>
         </div>
+       
         <!-- video_end -->
         <div class="maps-area">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-lg-7 col-md-7 col-sm-7">
+                    <!-- <div class="col-lg-7 col-md-7 col-sm-7">
                         <img src="assets/img/gallery/map1.png" alt="" class="w-100">
+                    </div> -->
+                    <div class="col-lg-7 col-md-7 col-sm-7">
+                        <iframe class=" w-100 h-100"
+                        src="https://maps.google.com/maps?&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                        frameborder="0" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-5">
                         <img src="assets/img/gallery/nesto.jpg" alt="" class="w-100">
@@ -517,6 +524,61 @@
                 </div>
             </div>
         </div>
+        <div>
+            <div class="row justify-content-center ml-0">
+                <div class="col-12">
+                    <h2 class="contact-title mt-40 text-center">Get in Touch</h2>
+                </div>
+                <div class="col-lg-8">
+                    <form class="form-contact" id="submit-form" action="">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="email" id="email" type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="4" placeholder="Enter Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-1">
+                            <button type="submit" class="button boxed-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <script>
+                $("#submit-form").submit((e)=>{
+                    e.preventDefault()
+                    $.ajax({
+                        url:"https://script.google.com/macros/s/AKfycbxBcyQ2uxEpAg00yrZaMkUWIPeIhM6ta9lDBqkXNuFUuvYfboqgzUeZweZv3wPGHbAV/exec",
+                        data:$("#submit-form").serialize(),
+                        method:"post",
+                        success:function (response){
+                            alert("Form Submitted Successfully")
+                            // window.location.reload()
+                            //window.location.href="https://google.com"
+                        },
+                        error:function (err){
+                            alert("Something Error")
+            
+                        }
+                    })
+                })
+            </script>     
     </main>
     <footer>
         <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer-bg.png">
@@ -602,10 +664,13 @@
                             <div class="single-footer-caption">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo/green belt final.png" class="w-50 w-md-25"
+                                    <a href="index.html" class="d-none d-sm-block">
+                                        <img src="assets/img/logo/green belt final.png" class="w-25"
                                             alt="Green Belt Final Logo">
-
+                                    </a>
+                                    <a href="index.html" class="d-block d-sm-none">
+                                        <img src="assets/img/logo/green belt final.png" class="w-50"
+                                            alt="Green Belt Final Logo">
                                     </a>
                                 </div>
 
