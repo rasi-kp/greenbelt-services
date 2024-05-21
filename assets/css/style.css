@@ -65,7 +65,7 @@
     background: #fff;
     color: #007AFF !important;
     display: inline-block;
-    padding: 18px 44px;
+    padding: 10px 40px;
     font-family: "Work Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -5850,13 +5850,13 @@ hr {
 }
 
 .form-contact .form-group {
-    margin-bottom: 30px
+    margin-bottom: 15px
 }
 
 .form-contact .form-control {
     border: 1px solid #e5e6e9;
     border-radius: 0px;
-    height: 48px;
+    height: 37px;
     padding-left: 18px;
     font-size: 13px;
     background: transparent
@@ -5869,7 +5869,7 @@ hr {
 
 .form-contact .form-control::placeholder {
     font-weight: 300;
-    color: #999999
+    color: #000000
 }
 
 .form-contact textarea {
