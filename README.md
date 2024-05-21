@@ -22,7 +22,7 @@ This repository contains the work completed for my freelance project. The projec
 - **Frontend:**
   - HTML5
   - CSS3
-  - JavaScript (vanilla or framework/library if applicable)
+  - JavaScript 
 
 ## Getting Started
 
@@ -37,7 +37,7 @@ Ensure you have the following installed on your local machine:
 
 1. **Clone the repository:**
 git clone https://github.com/rasi-kp/greenbelt-services.git
-cd your-repo-name
+cd greenbelt-services
 
 2. **Open the project:**
 
