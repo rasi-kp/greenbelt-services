@@ -6232,6 +6232,29 @@ hr {
     background: linear-gradient(to right, rgba(56, 168, 4, 0.8) 0%, rgba(0, 42, 255, 0.5) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc010a44', endColorstr='#80002aff', GradientType=1)
 }
+.hero-overlylaundry {
+    position: relative;
+    z-index: 1
+}
+
+.hero-overlylaundry::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-repeat: no-repeat
+}
+.hero-overlylaundry::before {
+    background: -moz-linear-gradient(left, rgba(1, 10, 68, 0.8) 0%, rgba(0, 42, 255, 0.5) 100%);
+    background: -webkit-linear-gradient(left, rgba(1, 10, 68, 0.8) 0%, rgba(0, 42, 255, 0.5) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(103, 119, 202, 0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc010a44', endColorstr='#80002aff', GradientType=1)
+}
 
 .testimonial-area .about-caption {
     background: #1592e6;
